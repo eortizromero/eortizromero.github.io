@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Sobre mi
+permalink: /sobre-mi/
 ---
 
-Some information about you!
+Hola soy goku :D
 
-### More Information
+### Más información
 
 A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### Contactame
 
-[email@domain.com](mailto:email@domain.com)
+[edgardoficial.yo@gmail.com](mailto:edgardoficial.yo@gmail.com)
