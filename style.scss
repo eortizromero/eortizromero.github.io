@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+@import "circular_font";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -19,7 +21,8 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  /*font: 18px/1.4 $helvetica;*/
+  font-family: 'Circular', 'Fira Code';
   color: $darkGray;
 }
 
@@ -31,12 +34,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
   color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 15px 0 15px;;
   padding: 0;
 
   @include mobile {
@@ -182,7 +184,7 @@ img {
 .wrapper-hero{
   position: absolute;
   top: 50px;
-  height: 300px;
+  height: 350px;
   width: 100%;
 
   img{
@@ -199,7 +201,7 @@ img {
 
 .wrapper-content{
   position: absolute;
-  top: 350px;
+  top: 400px;
   width: 100%;
   @include mobile{
     top: 0;
@@ -210,8 +212,13 @@ img {
 
 .description{
   position: absolute;
-  top: 50%;
+  top: 0;
   width: 100%;
+  h3{
+    font-size: 80px;
+    font-weight: 900;
+    color: #EDEDED;
+  }
 }
 
 .site-avatar {
@@ -247,7 +254,6 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -265,7 +271,6 @@ img {
 
 nav {
   float: right;// @TODO: Vertically middle align
-  font-family: $helveticaNeue;
   font-size: 18px;
 
   @include mobile {

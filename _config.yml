@@ -16,6 +16,7 @@ hero: /images/background.jpg
 #
 # Flags below are optional
 #
+date_format: '%d-%m-%Y'
 
 # Includes an icon in the footer for each username you enter
 footer-links:
