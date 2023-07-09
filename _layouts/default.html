@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -13,50 +13,288 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body>
-    <div class="wrapper-masthead">
+    <header class="header">
+      <a href="#" class="logo">{{ site.name }}</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Edgardo Ortiz</span></h1>
+        <div class="text-animate">
+          <h3>Python / Odoo Developer</h3>
+          <p>
+            Welcome to my website. <br>
+            I offer my services as a Freelance Odoo developer
+            You can check my resume <a href="#education" class="link">here</a>
+          </p>
+          <div class="btn-box">
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="#" class="btn">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+      <div class="home-soc">
+        <a href="mailto:edgardoficial.yo@gmail.com"><i class='bx bx-envelope'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+      </div>
+      <div class="home-imgHover"></div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about-img">
+        <img src="images/home.jpeg" alt="About menu">
+        <span class="circle-spin"></span>
+      </div>
+      <div class="about-content">
+        <h3>Python Developer</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Rem nobis error perferendis consequatur beatae, quaerat dolorum ab nulla atque qui quae sapiente
+           a commodi dolores ducimus magni in dolor reprehenderit?
+        </p>
+        <div class="btn-box btns">
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Journay</span></h2>
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">Education</h3>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i> 2010 - 2015</div>
+                <h3>Bachelor's Degree - UMB UES Temascalcingo</h3>
+                <p>
+                  Unidad de Estudios Superiores Temascalcingo
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="education-column">
+          <h3 class="title">Experience</h3>
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i> Apr 2023 - Jun 2023 <span>ERP Developer Sr</span></div>
+                <h3>The Villa Group Beach Resorts & Spas</h3>
+                <p>
+                  1. In charge of codifying the requirements raised by the consulting manager。
+                </p>
+                <p>
+                  2. Participate in daily sessions to report progress, under the SCRUM scheme。
+                </p>
+                <p>
+                  3. Analyze the requirements and propose possible solutions appropriate to the company's process.。
+                </p>
+                <p>
+                  - Development of the following modules:
+                    - Human Resources
+                    - Service Desk
+                </p>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i>Feb 2018 - Jun 2023 <span>Odoo Developer Sr</span></div>
+                <p>
+                  1、Development and customization of the following modules:
+                  <br>
+                  <br>
+                - Purchase Request.            - Inventory
+                - Purchases                    - Payments, List of Payments
+                - Sales
+                - Billing / Accounting。
+
+                  <br>
+                  <br>
+                Extra: Configuration of environments for development with odoo, both web and database, under the Ubuntu 16.04 operating system. Management of Google Cloud Platform (GCP).
+                </p>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i> Feb 2017 - Ene 2018 <span>Odoo Developer Jr</span></div>
+                <p>
+                  As Odoo Developer Jr
+                  <br>
+                  <br>
+                  Development and customization of the following modules:
+                  <br>
+                  - Purchases.            - Inventory
+
+                  <br>
+                  <br>
+                  Extra: Configuration of environments for development with odoo, both web and database, under the Centos 7 operating system.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">Coding Skills</h3>
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Python <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>JavaScript <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>HTML<span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>CSS <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>JQuery <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="skills-column">
+          <h3 class="title">Professional Skills</h3>
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Python <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>JavaScript <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>HTML<span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>CSS <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+              <div class="progress">
+                <h3>JQuery <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" name="name" id="name" placeholder="Full Name">
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <span class="focus"></span>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-field">
+            <input type="number" name="mobile" id="mobile" placeholder="Mobile Number">
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" name="email_subject" id="email_subject" placeholder="Email Subject">
+            <span class="focus"></span>
+          </div>
+        </div>
+        <div class="textarea-field">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+          <span class="focus"></span>
+        </div>
+        <div class="btn-box btns">
+          <button type="submit" class="btn" id="button_contact">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Edgardo Ortiz | All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    
+    <!-- <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
-
           <nav>
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/sobre-mi">Sobre mi</a>
           </nav>
         </header>
       </div>
-    </div>
+    </div> -->
     
-    <div class="wrapper-hero">
+    <!-- <div class="wrapper-hero">
       <div class="description">
         <div class="container">
-          <h3>Desarrolla con Python</h3>
         </div>
       </div>
       <img src="/images/hero.png" alt="Hero Image" />
-    </div>
+    </div> -->
     
+   <!--  
     <div class="wrapper-content">
       <div id="main" role="main" class="container ">
         {{ content }}
       </div>
-    </div>
+    </div> -->
 
-    <div class="wrapper-footer">
+    <!-- <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div>
+    </div> -->
 
     {% include analytics.html %}
+    <script src="{{ site.script }}" type="text/javascript"></script>
   </body>
 </html>
